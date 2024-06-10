@@ -1,4 +1,4 @@
-# IoT-Based WC Cleanliness Detection Using MQ-135 Sensor for Ammonia Monitoring
+# GoKillS: IoT-Based WC Cleanliness Detection Using MQ-135 Sensor for Ammonia Monitoring
 
 ## Overview
 This project uses an IoT system to monitor ammonia levels in public restrooms in real-time using the MQ-135 sensor. It aims to improve restroom cleanliness and user experience by providing timely notifications to cleaning staff.
