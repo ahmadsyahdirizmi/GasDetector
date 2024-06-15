@@ -66,7 +66,8 @@ float readMQ135() {
   float ratio = sensorResistance / Ro;
   float m = -0.417;
   float b = log10(2); // log(2) karena rasio Rs/Ro = 3.6 di udara bersih
-  float ppm = pow(10, (log10(ratio) - b) / m);
+  float ppm = pow(10, (log10(ratio) - b) / m);  /* PPM = 10 ^ {[log(ratio) – b]/m} ---> m = [log(y2) – log(y1)] / [log(x2) – log(x1)]
+  dengan nilai y1, y2, x1, x2 diambil dari datasheet sensor MQ-135 */ 
   
   return ppm;
 }
