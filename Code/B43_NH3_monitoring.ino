@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL6iDxlhKjV"
-#define BLYNK_TEMPLATE_NAME "GoKillS"
-#define BLYNK_AUTH_TOKEN "mRtMAcsmHVG0-aDHkHD8R9ymWrcMaX8d"
+#define BLYNK_TEMPLATE_ID "Template ID"
+#define BLYNK_TEMPLATE_NAME "Template Name"
+#define BLYNK_AUTH_TOKEN "Author Token"
 
 #include <WiFi.h>
 #include <BlynkSimpleEsp32.h>
@@ -47,8 +47,8 @@ bool buzzerActive = false;   // Status buzzer aktif atau tidak
 bool conditionChanged = false; // Flag untuk melacak perubahan kondisi
 
 // HTTP API untuk Telegram
-const char* telegramBotToken = "6558496248:AAG08hBSZQVpi0ys7SnzvtsHvX2YwP2UmOU"; // Ganti dengan token bot Telegram Anda
-const char* telegramChatId = "7011787366"; // Ganti dengan chat ID Anda
+const char* telegramBotToken = "your telegram bot token"; // Ganti dengan token bot Telegram Anda
+const char* telegramChatId = "your telegram chat ID"; // Ganti dengan chat ID Anda
 
 // Function to read MQ135 sensor and calculate PPM
 float readMQ135() {
