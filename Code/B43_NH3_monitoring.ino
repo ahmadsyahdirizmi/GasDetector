@@ -173,9 +173,6 @@ void setup() {
   // Debug console
   Serial.begin(115200);
 
-  // Blynk setup
-  Blynk.begin(auth, ssid, pass);
-
   // LCD setup
   lcd.init();
   lcd.backlight();
@@ -191,6 +188,9 @@ void setup() {
   lcd.setCursor(0, 1);
   lcd.print("Connecting...");
 
+  // Blynk setup
+  Blynk.begin(auth, ssid, pass);
+  
   // Konfigurasi LEDC untuk menghasilkan bunyi dengan buzzer
   ledcSetup(0, 5000, 8);   // Konfigurasi channel LEDC dengan frekuensi 5kHz dan resolusi 8-bit
   ledcAttachPin(BUZZER_PIN, 0);  // Hubungkan pin buzzer ke channel LEDC
